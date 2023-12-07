@@ -14,11 +14,11 @@ val numberStrings = mapOf(
 
 fun main() {
     val lines = File("src/main/resources/input-day-01.txt").readLines()
-    val result1 = lines.sumOf { s -> s.toCalibrationValue() }
-    val result2 = lines.sumOf { s -> s.parseDigits().toCalibrationValue() }
+    val resultPartOne = lines.sumOf { s -> s.toCalibrationValue() }
+    val resultPartTwo = lines.sumOf { s -> s.parseDigits().toCalibrationValue() }
 
-    println(result1)
-    println(result2)
+    println(resultPartOne)
+    println(resultPartTwo)
 }
 
 fun String.toCalibrationValue(): Int {
